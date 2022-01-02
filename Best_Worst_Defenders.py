@@ -22,6 +22,7 @@ import matplotlib.pyplot as plt
 #Allows for the addition of plot within the browser interface
 # %matplotlib inline
 
+st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 st.title("*Analyzing Player Defense*")
 
 
