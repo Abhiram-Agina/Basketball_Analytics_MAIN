@@ -26,7 +26,7 @@ st.title("*Analyzing Player Defense*")
 
 
 #Importing Dataset
-shot_df = pd.read_csv('C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\NBAshot_logs.csv')
+shot_df = pd.read_csv('DATA/NBAshot_logs.csv')
 #st.write(len(shot_df))
 st.dataframe(shot_df)
 st.write("Columns: ", shot_df.shape[0], " Rows: ", shot_df.shape[1])
