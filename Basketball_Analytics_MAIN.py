@@ -23,7 +23,7 @@ if nav == "Summary":
     * Turnovers
     * Fouls
     * Attempts in the Paint
-    * [Predicting Wins -- Simulation](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Game_Simulation.py)
+    * [Predicting Wins -- Simulation](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Best_Worst_Defenders.py)
     * Injury Report
     '''
     )
