@@ -6,7 +6,7 @@ import streamlit as st
 st.title("Predicting Game Results")
 st.title("*Warriors vs. Rockets*")
 
-gamesDF = pd.read_csv('C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\nba.games.stats.csv')
+gamesDF = pd.read_csv('DATA/nba.games.stats.csv')
 st.dataframe(gamesDF) #We want Team, Date, TeamsPoints, OpponentPoints
 
 #Create 2 DataFrames
