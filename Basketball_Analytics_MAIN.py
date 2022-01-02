@@ -45,7 +45,7 @@ if nav == "Summary":
     * Standard Deviation of difference of 2 Lineups
     * Lineup Chemistry
     * Shot Analysis
-    * Best vs. Worst Defenders
+    * [Best vs. Worst Defenders](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Game_Simulation.py)
     * 
     '''
     )
