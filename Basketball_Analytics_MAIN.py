@@ -23,7 +23,7 @@ if nav == "Summary":
     * Turnovers
     * Fouls
     * Attempts in the Paint
-    * [Predicting Wins -- Simulation](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Best_Worst_Defenders.py)
+    * [Predicting Wins -- Simulation](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Game_Simulation.py)
     * Injury Report
     '''
     )
@@ -45,7 +45,7 @@ if nav == "Summary":
     * Standard Deviation of difference of 2 Lineups
     * Lineup Chemistry
     * Shot Analysis
-    * [Best vs. Worst Defenders](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Game_Simulation.py)
+    * [Best vs. Worst Defenders](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Best_Worst_Defenders.py)
     * 
     '''
     )
