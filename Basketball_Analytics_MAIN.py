@@ -46,7 +46,6 @@ if nav == "Summary":
     * Lineup Chemistry
     * Shot Analysis
     * [Best vs. Worst Defenders](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Best_Worst_Defenders.py)
-    * 
     '''
     )
     
