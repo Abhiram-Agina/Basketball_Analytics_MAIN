@@ -1,6 +1,6 @@
 import streamlit as st
 st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
-st.set_page_config(page_title = "NBA Player Stats Explorer")
+st.title("NBA Player Stats Explorer")
 
 import pandas as pd
 import base64
