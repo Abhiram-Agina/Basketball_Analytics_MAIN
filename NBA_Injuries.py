@@ -6,6 +6,8 @@ import seaborn as sns
 import streamlit as st
 import io
 
+st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
+
 st.title("Basketball INJURY Analysis")
 st.write("IL = Injured List")
 
