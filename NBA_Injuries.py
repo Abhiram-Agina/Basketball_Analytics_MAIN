@@ -33,6 +33,7 @@ dataInjury
 # split date into year,month,day
 dataInjury['yearInjury'] = pd.DatetimeIndex(dataInjury['Date']).year
 dataInjury['monthInjury'] = pd.DatetimeIndex(dataInjury['Date']).month
+dataInjury.drop("Date")
 #dataInjury['dayInjury'] = pd.DatetimeIndex(dataInjury['Date']).day
 # dataInjury
 
