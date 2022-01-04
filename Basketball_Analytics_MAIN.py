@@ -24,7 +24,7 @@ if nav == "Summary":
     * Fouls
     * Attempts in the Paint
     * [Predicting Wins -- Simulation](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Game_Simulation.py)
-    * Injury Report
+    * [Injury Report](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_Injuries.py)
     '''
     )
     
