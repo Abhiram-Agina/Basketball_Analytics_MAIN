@@ -44,7 +44,7 @@ if nav == "Summary":
     * Standard Deviation of a Lineup
     * Standard Deviation of difference of 2 Lineups
     * Lineup Chemistry
-    * Shot Analysis
+    * [Player Shot Analysis](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Shot_Analysis_KobeBryant.py)
     * [Best vs. Worst Defenders](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Best_Worst_Defenders.py)
     '''
     )
