@@ -40,7 +40,7 @@ df_selected_team = playerstats[(playerstats.Tm.isin(selected_team)) & (playersta
 
 st.header('Display Player Stats of Selected Team(s)')
 st.write('Data Dimension: ' + str(df_selected_team.shape[0]) + ' rows and ' + str(df_selected_team.shape[1]) + ' columns')
-st.dataframe(df_selected_team)
+#st.dataframe(df_selected_team)
 
 
 st.header('Exploratory Data Analysis - Visualized')
