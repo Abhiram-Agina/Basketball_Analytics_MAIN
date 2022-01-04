@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 #Efficiency Per Game = PPG + RPG + APG + SPG + BPG - TOPG - FGMissed - FTMissed
-playerStatsDF = pd.read_csv('C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\PlayerStats.csv')
+playerStatsDF = pd.read_csv('DATA/PlayerStats.csv')
 playerStatsDF = playerStatsDF.drop(columns = ['Birthdate', 'Age', 'Birth_Place', 'Collage', 'Experience', 'Height', 'Pos', 'Team', 'Weight', 'BMI'])
 st.title("Analyzing NBA Player Efficiency in the 2014-15 Season")
 st.write("**Dataset -- Attributes for NBA Efficiency:**")
