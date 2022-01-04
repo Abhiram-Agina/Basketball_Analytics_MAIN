@@ -30,9 +30,7 @@ dataInjury
 # split date into year,month,day
 dataInjury['yearInjury'] = pd.DatetimeIndex(dataInjury['Date']).year
 dataInjury['monthInjury'] = pd.DatetimeIndex(dataInjury['Date']).month
-dataInjury = dataInjury.drop("Date", 1)
-#dataInjury['dayInjury'] = pd.DatetimeIndex(dataInjury['Date']).day
-# dataInjury
+#dataInjury = dataInjury.drop("Date", 1)
 
 cols = list(dataInjury.columns)
 st.sidebar.header('select a column')
