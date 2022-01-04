@@ -17,6 +17,7 @@ import streamlit as st
 #Efficiency Per Game = PPG + RPG + APG + SPG + BPG - TOPG - FGMissed - FTMissed
 playerStatsDF = pd.read_csv('DATA/PlayerStats.csv')
 playerStatsDF = playerStatsDF.drop(columns = ['Birthdate', 'Age', 'Birth_Place', 'Collage', 'Experience', 'Height', 'Pos', 'Team', 'Weight', 'BMI'])
+st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 st.title("Analyzing NBA Player Efficiency in the 2014-15 Season")
 st.write("**Dataset -- Attributes for NBA Efficiency:**")
 st.dataframe(playerStatsDF.head())
