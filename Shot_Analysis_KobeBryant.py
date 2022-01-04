@@ -24,9 +24,10 @@ import matplotlib as mpl
 import streamlit as st
 
 #Load Training Data
-totalData = pd.read_csv('C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\Kobe_CareerShots.csv')
+totalData = pd.read_csv('DATA/Kobe_CareerShots.csv')
 #totalData.head()
 
+st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 st.title("Shot Analysis")
 st.markdown(
 """
