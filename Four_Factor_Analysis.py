@@ -6,6 +6,7 @@ import seaborn as sns
 
 import streamlit as st #Create Apps of Python Programs + Hosting
 
+st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 st.title("NBA Statistics")
 
 data = pd.read_csv("DATA/RegularSeasonDetailedResults_2018_11_10records.csv",sep=",")
