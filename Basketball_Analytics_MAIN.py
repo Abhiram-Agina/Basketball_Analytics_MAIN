@@ -70,7 +70,7 @@ if nav == "Summary":
     \n
     **Custom Analysis:**
     \n
-    * Analyzing of Web Scraped Data
+    * [Analyzing of Web Scraped Data](https://github.com/Abhiram-Agina/Basketball_Analytics_MAIN/blob/main/Basketball_Explorer.py)
     * Custom Data Analysis
     * AAU Basketball Stats
     * CYBA/AYBA Basketball Stats
