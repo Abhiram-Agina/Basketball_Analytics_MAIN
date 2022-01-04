@@ -19,7 +19,7 @@ if nav == "Summary":
     '''
     **Team Analysis:**
     \n
-    * Four-Factor Analysis: EFFG, TPP, OReb%, FTR: Offensive & Defensive
+    * [Four-Factor Analysis: EFFG, TPP, OReb%, FTR: Offensive & Defensive](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Four_Factor_Analysis.py)
     * Turnovers
     * Fouls
     * Attempts in the Paint
