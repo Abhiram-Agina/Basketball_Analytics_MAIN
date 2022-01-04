@@ -4,5 +4,3 @@ numpy
 pandas
 seaborn
 lxml
-sklearn.linear_model
-LinearRegression
