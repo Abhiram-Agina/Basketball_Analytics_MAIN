@@ -1,9 +1,10 @@
 import streamlit as st
+st.set_page_config(page_title = "NBA Player Stats Explorer")
+
 import pandas as pd
 import base64
 import seaborn as sns
 
-st.set_page_config(page_title = "NBA Player Stats Explorer")
 st.markdown(
 """
 This app performs basic webscraping of B-Ball Player Stats!
