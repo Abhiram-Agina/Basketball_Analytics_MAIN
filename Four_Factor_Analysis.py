@@ -8,7 +8,7 @@ import streamlit as st #Create Apps of Python Programs + Hosting
 
 st.title("NBA Statistics")
 
-data = pd.read_csv("C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\RegularSeasonDetailedResults_2018_11_10records.csv",sep=",")
+data = pd.read_csv("DATA/RegularSeasonDetailedResults_2018_11_10records.csv",sep=",")
 
 if st.checkbox("Show Table"):
     st.table(data)
