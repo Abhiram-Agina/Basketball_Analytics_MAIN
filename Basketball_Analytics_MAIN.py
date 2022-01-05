@@ -73,6 +73,6 @@ if nav == "Summary":
     * [Analyzing of Web Scraped Data](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Explorer.py)
     * Custom Data Analysis
     * AAU Basketball Stats
-    * CYBA/AYBA Basketball Stats
+    * CYBA/AYBA Basketball Stats 
     '''
     )
