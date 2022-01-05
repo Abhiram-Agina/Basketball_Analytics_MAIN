@@ -37,7 +37,7 @@ if nav == "Summary":
     \n
     * [NBA Efficiency Rating](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/NBA_EfficiencyRating.py)
     * John Hollineger's PER
-    * [BSB Win Scores](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/BSB_WinScores.py)
+    * BSB Win Scores
     * Adjusted NBA +/- Player Rating 
     * Player Impact Ratings
     * Roland Ratings from 82games.com
