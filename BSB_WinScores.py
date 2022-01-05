@@ -16,7 +16,7 @@ import streamlit as st
 import seaborn as sns
 
 #BSB Win Scores = 
-playerStatsDF = pd.read_csv('C:\\Users\\Robo1753\\Desktop\\Streamlit_Programs\\SPORTS ANALYTICS\\DATA\\PlayerStats.csv')
+playerStatsDF = pd.read_csv('DATA/PlayerStats.csv')
 refinedDF = playerStatsDF.drop(columns = ['Birthdate', 'Age', 'Birth_Place', 'Collage', 'Experience', 'Height', 'Pos', 'Weight', 'BMI'])
 st.title("Analyzing BSB Win Scores")
 st.write("**NBA Dataset(2014 to 2015) -- Attributes for BSB's Win Scores:**")
