@@ -61,5 +61,6 @@ plt.xticks(rotation = 75)
 for index, value in enumerate(userDF["BSB's Win Scores"]):
     plt.text(index - 0.42, value, str(value), fontsize = 'small' ,fontstyle = 'italic', )
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
 
