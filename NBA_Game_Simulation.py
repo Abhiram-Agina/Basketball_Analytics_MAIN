@@ -2,9 +2,13 @@ import pandas as pd
 import random as rnd
 import matplotlib.pyplot as plt
 import streamlit as st
+from PIL import Image
 
 st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 st.title("Predicting Game Results")
+
+image = Image.open('PICS/PredictingGames.jpg')
+
 st.title("*Warriors vs. Rockets*")
 
 gamesDF = pd.read_csv('DATA/nba.games.stats.csv')
