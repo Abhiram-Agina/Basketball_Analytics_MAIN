@@ -2,23 +2,59 @@
 
 import streamlit as st
 import pandas as pd
+from PIL import Image
 
-st.title("Basketball Analytics")
+st.title("Homepage: **Basketball Analytics**")
 
 #make an index of services offered
 #list metrics, along with importance & limitations
 #predict/analyze game outcome per Team metrics
 
+secondSpectrumPic = Image.open("PICS/SportsAnalytics.jpg")
+nbaLogoPic = Image.open("PICS/NBALogo.png")
+abhiramPic = Image.open("PICS/AbhiramAgina.jpg")
 
-nav = st.sidebar.radio("Navigation",["Summary","Team Analysis","Player Analysis","Marketing Analysis", "Miscellaneous"])
+st.sidebar.image(abhiramPic, width = 150)
+st.sidebar.markdown(
+"""
+About Me:
+* I am a Junior at Oak Park High School in Oak Park, CA. I absolutely love Basketball & the NBA. I developed this app as a tool and portfolio of my early work in Basketball Analytics.
+* [**My Github**](https://github.com/Abhiram-Agina)
+* [**My LinkedIn**](https://www.linkedin.com/in/abhiram-agina/)
+"""
+)
+
+nav = st.sidebar.radio("Navigation",["Summary", "Team Analysis", "Player Analysis", "Marketing/Sales Analysis", "Custom/Web Analysis"])
+
 
 if nav == "Summary":
-    st.header("Table of Contents")
-
+    st.image(secondSpectrumPic, caption = "Second Spectrum Analysis on 2014 NBA Finals", width = 700)
+    st.markdown(
+    """
+    ***Data Science + Sports? ***
+    * **Our world is changing, and sports are no exception.** 
+    * Data Science and Analytics can now be implemented into every facet of a game from **Team** and **Player** Analysis all the way to aspects such as **Ticketing** and **Marketing**.
+    * More Info: [How Data Analysis In Sports Is Changing The Game](https://www.forbes.com/sites/forbestechcouncil/2019/01/31/how-data-analysis-in-sports-is-changing-the-game/?sh=3c2f0b883f7b)\n
+    
+    ***My Goal***
+    * This website aims to chart and display my growth into the World of Data Analytics. I begin with my favorite sport, a game I continue to love playing, watching, and learning about. 
+    * ***Please Explore and Enjoy :)***\n
+    """
+    )
+    
+    st.image(nbaLogoPic, width = 700)
+    
+    st.markdown(
+    """
+    ***Inspiration: Ken Jee, Data Professor, Mathletics, MIT ADSP***
+    """
+    )
+    
+    
+if nav == "Team Analysis":
+    st.header("*Team Analysis*")
     st.markdown(
     '''
-    **Team Analysis:**
-    \n
     * [Four-Factor Analysis: EFFG, TPP, OReb%, FTR: Offensive & Defensive](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Four_Factor_Analysis.py)
     * Turnovers
     * Fouls
@@ -28,8 +64,8 @@ if nav == "Summary":
     '''
     )
     
-    #POST-GAME for Rating & Salary
-    #use Excel Formulas in Mathletics
+if nav == "Player Analysis":
+    st.header("*Player Analysis*")
     st.markdown(
     '''
     \n
@@ -49,12 +85,8 @@ if nav == "Summary":
     '''
     )
     
-    #NOTE: Each Team plays 300-600 different lineups during the course of a season.\n
-    #GOAL: Play good lineups more and bad lineups less.\n
-    #www.lineupsuperiority.xls
-    #DATA: https://www.basketball-reference.com/playoffs/2006-nba-western-conference-semifinals-mavericks-vs-spurs.html
-
-
+if nav == "Marketing/Sales Analysis":
+    st.header("*Marketing/Sales Analysis*")
     st.markdown(
     '''
     \n
@@ -62,9 +94,12 @@ if nav == "Summary":
     \n
     * Player Salary Analysis
     * Ticketing Optimization
+    * ***MORE COMING SOON!***
     '''
     )
     
+if nav == "Custom/Web Analysis":
+    st.header("*Custom/Web Analysis*")
     st.markdown(
     '''
     \n
