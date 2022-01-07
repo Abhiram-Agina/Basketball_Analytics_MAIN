@@ -8,6 +8,7 @@ st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/baske
 st.title("Predicting Game Results")
 
 image = Image.open('PICS/PredictingGames.jpg')
+st.image(image, caption = "WCF - GSW vs. HOU")
 
 st.title("*Warriors vs. Rockets*")
 
