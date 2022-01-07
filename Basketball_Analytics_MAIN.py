@@ -12,6 +12,9 @@ st.title("Homepage: **Basketball Analytics**")
 
 secondSpectrumPic = Image.open("PICS/SportsAnalytics.jpg")
 nbaLogoPic = Image.open("PICS/NBALogo.png")
+aauLogoPic = Image.open("PICS/AAU.png")
+ncaaLogoPic = Image.open("PICS/NCAA.png")
+ophsAthleticsPic = Image.open("PICS/OPHSAthletics.png")
 abhiramPic = Image.open("PICS/AbhiramAgina.jpg")
 
 st.sidebar.image(abhiramPic, width = 150)
@@ -41,8 +44,11 @@ if nav == "Summary":
     * ***Please Explore and Enjoy :)***\n
     """
     )
-    
-    st.image(nbaLogoPic, width = 700)
+    col1, col2, col3, col4 = st.columns(4)
+    col1.image(aauLogoPic)
+    col2.image(nbaLogoPic)
+    col3.image(ncaaLogoPic)
+    col4.image(ophsAthleticsPic)
     
     st.markdown(
     """
