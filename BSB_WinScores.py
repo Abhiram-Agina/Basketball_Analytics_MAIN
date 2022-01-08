@@ -107,6 +107,6 @@ col2.pyplot()
 st.markdown(
 """
 **Win Scores are calculated through the formula:**
-* PPG + RPG + 0.5 * APG + SPG + 0.5 * BPG - FGA - TOV - 0.5 * FTA - 0.5 * PF
+* PPG + RPG + 0.5 x APG + SPG + 0.5 x BPG - FGA - TOV - 0.5 x FTA - 0.5 x PF
 """
 )
