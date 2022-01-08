@@ -12,15 +12,13 @@ NBA Efficiency Rating
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-
 import streamlit as st
-st.set_page_config(page_title = "Analyzing BSB Win Scores")
-
 import seaborn as sns
 from PIL import Image
 
 st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 
+st.title("Analyzing BSB Win Scores")
 image = Image.open('PICS/BSBWinScores.jpg')
 st.image(image, caption = "73-9 Warriors")
 
@@ -67,7 +65,7 @@ sorted_unique_team = sorted(playerstats.Tm.unique())
 selected_team = st.sidebar.selectbox('Team',sorted_unique_team)
 
 userDF = playerstats[playerstats.Tm == selected_team]
-st.dataframe(userDF)
+#st.dataframe(userDF)
 
 st.markdown(
 """
