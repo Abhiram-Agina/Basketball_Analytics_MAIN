@@ -103,3 +103,10 @@ color = sns.color_palette('pastel')[0:5]
 textprops = {"fontsize": 5}
 plt.pie(piePlottedSet["BSB's Win Scores"], labels = piePlottedSet['Player'], colors = color, autopct = '%.000f%%', textprops = textprops)
 col2.pyplot()
+
+st.markdown(
+"""
+**Win Scores are calculated through the formula:**
+* PPG + RPG + 0.5 * APG + SPG + 0.5 * BPG - FGA - TOV - 0.5 * FTA - 0.5 * PF
+"""
+)
