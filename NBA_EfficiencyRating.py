@@ -13,14 +13,27 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import streamlit as st
+from PIL import Image
 
 #Efficiency Per Game = PPG + RPG + APG + SPG + BPG - TOPG - FGMissed - FTMissed
 playerStatsDF = pd.read_csv('DATA/PlayerStats.csv')
 playerStatsDF = playerStatsDF.drop(columns = ['Birthdate', 'Age', 'Birth_Place', 'Collage', 'Experience', 'Height', 'Pos', 'Team', 'Weight', 'BMI'])
 st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
+
 st.title("Analyzing NBA Player Efficiency in the 2014-15 Season")
+
+image = Image.open(PICS/NBAEfficiency.jpeg')
+st.image(image, caption = "Chris Paul game-clinching floater vs. Spurs in Game 7 - 2015 Playoffs")
+
 st.write("**Dataset -- Attributes for NBA Efficiency:**")
 st.dataframe(playerStatsDF.head())
+
+st.markdown(
+"""
+**Player Efficiency is a highly valued and appreciated statistical metric used by both organizations and coaches alike. Player Efficiency aims to quantify a players offensive and defensive contributions into a single comparable value.**
+* Within the NBA, Efficiency displays what exactly a player does for their team. However, some holes lie within this metric as many more offensive metrics are measured in comparison to defense, so defensive-oriented players are often reflected poorly in this metric.
+"""
+)
 
 #Creating PPG Stats
 playerStatsDF['PPG'] = round(playerStatsDF['PTS']/playerStatsDF['Games Played'], 2)
@@ -43,6 +56,9 @@ fig = plt.subplots()
 EfficiencyPerGame = pd.DataFrame(playerStatsDF['PPG'] + playerStatsDF['RPG'] + playerStatsDF['APG'] + playerStatsDF['SPG'] + playerStatsDF['BPG'] - playerStatsDF['TOPG'] - playerStatsDF['FGMissed'] - playerStatsDF['FTMissed'])
 playerStatsDF.insert(1, 'EfficiencyPerGame', round(EfficiencyPerGame, 2))
 plt.hist(playerStatsDF['EfficiencyPerGame'])
+plt.xlabel("NBA Player Efficiency")
+plt.ylabel("Frequency")
+plt.title("Distribution of Player Efficiency w/i the NBA")
 st.set_option('deprecation.showPyplotGlobalUse', False)
 st.write("**Distribution of NBA Efficiency:**")
 st.pyplot()
@@ -50,6 +66,7 @@ st.markdown(
 """
 **Analysis:**
 * Displays the Average & Elite Efficiencies within the NBA.
+* We can see that few players reach efficiency levels of 30+, most fall in the 5-10 range.
 * *Calculated through* --> NBA Efficiency = PPG + RPG + APG + SPG + BPG - TOPG - FGMissed - FTMissed
 """
 )
@@ -69,3 +86,12 @@ correctedBPDF = bestPlayersDF[bestPlayersDF['Games Played'] >= 57]
 correctedBPDF = correctedBPDF.drop(columns = ['Games Played', 'MIN', 'PTS', 'FGM', 'FGA', 'FG%', '3PM', '3PA', '3P%', 'FTM', 'FTA', 'FT%', 'OREB', 'DREB', 'REB', 'AST', 'STL', 'BLK', 'TOV', 'PF', 'EFF', 'AST/TOV', 'STL/TOV'])
 st.write("**Best NBA Efficiency Ratings (Players must play 70% of games to Qualify): **")
 st.dataframe(correctedBPDF.head(10))
+
+st.markdown(
+"""
+***Analysis:***
+* Generally we see that players who "carry" their organizations as a sole superstar often hold incredibly high Efficiency Ratings
+* For example, Anthony Davis, Russel Westbrook, DeMarcus Cousins, and James Harden all act as the sole "playmaker" for their respective teams.
+* We also see that Bigs are found more often on this short-list than guards as the metric evaluates all offensive stats with the same weightage, so Centers/Power-Forwards who collect a lot of rebounds are more likely to see their NBA Efficiency Rating improve.
+"""
+)
