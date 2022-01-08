@@ -18,6 +18,7 @@ from PIL import Image
 
 st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Basketball_Analytics_MAIN.py)")
 
+st.title("Analyzing BSB Win Scores")
 image = Image.open('PICS/BSBWinScores.jpg')
 st.image(image, caption = "73-9 Warriors")
 
@@ -40,7 +41,6 @@ playerstats = load_data(selected_year)
 #BSB Win Scores = 
 playerStatsDF = pd.read_csv('DATA/PlayerStats.csv')
 refinedDF = playerStatsDF.drop(columns = ['Birthdate', 'Age', 'Birth_Place', 'Collage', 'Experience', 'Height', 'Pos', 'Weight', 'BMI'])
-st.title("Analyzing BSB Win Scores")
 #st.write("**NBA Dataset(2014 to 2015) -- Attributes for BSB's Win Scores:**")
 #st.dataframe(refinedDF)
 
