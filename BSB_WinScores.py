@@ -65,7 +65,7 @@ sorted_unique_team = sorted(playerstats.Tm.unique())
 selected_team = st.sidebar.selectbox('Team',sorted_unique_team)
 
 userDF = playerstats[playerstats.Tm == selected_team]
-#st.dataframe(userDF)
+st.dataframe(userDF)
 
 st.markdown(
 """
