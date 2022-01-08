@@ -22,7 +22,7 @@ st.markdown("[Return to HomePage](https://share.streamlit.io/abhiram-agina/baske
 
 st.title("Analyzing NBA Player Efficiency in the 2014-15 Season")
 
-image = Image.open(PICS/NBAEfficiency.jpeg')
+image = Image.open('PICS/NBAEfficiency.jpeg')
 st.image(image, caption = "Chris Paul game-clinching floater vs. Spurs in Game 7 - 2015 Playoffs")
 
 st.write("**Dataset -- Attributes for NBA Efficiency:**")
