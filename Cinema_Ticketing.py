@@ -15,12 +15,6 @@ import streamlit as st
 from fbprophet import Prophet
 from fbprophet.plot import add_changepoints_to_plot
 
-# from dask.distributed import Client
-# from fbprophet.diagnostics import cross_validation
-
-# from fbprophet.diagnostics import performance_metrics
-# from fbprophet.plot import plot_cross_validation_metric
-
 st.title("Analyzing Ticketing Trends")
 
 ticket = pd.read_csv('C:\\Users\\tulasi.agina\\PYTHON_Programs\\DATA\\CinemaTicketing.csv', usecols = ['total_sales', 'date'])
