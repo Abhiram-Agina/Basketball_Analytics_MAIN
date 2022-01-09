@@ -15,7 +15,7 @@ nbaLogoPic = Image.open("PICS/NBALogo.png")
 aauLogoPic = Image.open("PICS/AAU.png")
 ncaaLogoPic = Image.open("PICS/NCAA.png")
 ophsAthleticsPic = Image.open("PICS/OPHSAthletics.png")
-abhiramPic = Image.open("PICS/AbhiramAgina.jpg")
+abhiramPic = Image.open("PICS/AbhiramAgina.png")
 
 st.sidebar.image(abhiramPic, width = 150)
 st.sidebar.markdown(
