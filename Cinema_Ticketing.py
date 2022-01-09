@@ -17,7 +17,7 @@ from fbprophet.plot import add_changepoints_to_plot
 
 st.title("Analyzing Ticketing Trends")
 
-ticket = pd.read_csv('C:\\Users\\tulasi.agina\\PYTHON_Programs\\DATA\\CinemaTicketing.csv', usecols = ['total_sales', 'date'])
+ticket = pd.read_csv('DATA/NBAshot_logs.csv', usecols = ['total_sales', 'date'])
 ticket['date'] = pd.to_datetime(ticket['date'], errors = 'coerce')
 
 #ticket.info() #use the code snippet from NBA Injury Analysis to display .info() output to screen
