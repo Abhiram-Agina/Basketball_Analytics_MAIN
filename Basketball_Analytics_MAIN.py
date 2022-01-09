@@ -98,7 +98,7 @@ if nav == "Marketing/Sales Analysis":
     \n
     **Marketing & Sales Analysis:**
     \n
-    * Player Salary Analysis](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Cinema_Ticketing.py)
+    * [Player Salary Analysis](https://share.streamlit.io/abhiram-agina/basketball_analytics_main/main/Cinema_Ticketing.py)
     * [Ticketing Optimization
     * ***MORE COMING SOON!***
     '''
