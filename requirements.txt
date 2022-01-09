@@ -4,5 +4,4 @@ numpy
 pandas
 seaborn
 lxml
-fbprophet
 Image
