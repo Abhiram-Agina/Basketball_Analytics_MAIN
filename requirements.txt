@@ -5,3 +5,5 @@ pandas
 seaborn
 lxml
 Image
+fbprophet
+pystan
